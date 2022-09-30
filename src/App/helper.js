@@ -46,6 +46,7 @@ export async function fetchToken(callback) {
   callback( (tokenAccess) ? tokenAccess : 'error' );
 }
 
+//testing
 // Fetch API for storage container
 export async function fetchContainer(callback) {
   let apiUrl = "/api/storage";
