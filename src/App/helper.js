@@ -23,7 +23,7 @@ export async function fetchAuth(callback) {
 
 // Fetch AAD token API & set token state
 export async function fetchToken(callback) {
-  let apiUrl = "https://spinnakercustomconnector.azurewebsites.net/api/aad/token?code=DEFAULT_KEY/tokenhttps://spinnakercustomconnector.azurewebsites.net/api/aad/token?code=UxmUYg2u_vMdHn2L52b6a37hR_dejbMcWED6Gs0gR7sVAzFuKufOtQ==";
+  let apiUrl = "https://spinnakercustomconnector.azurewebsites.net/api/aad/token?code=UxmUYg2u_vMdHn2L52b6a37hR_dejbMcWED6Gs0gR7sVAzFuKufOtQ==";
   console.log(`### FETCH: GET ${apiUrl}`);
 
   const tokenResponse = await fetch(apiUrl).catch(error => console.error('Error:', error)),
